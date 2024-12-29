@@ -52,14 +52,14 @@
 }
 
 .guitar-design {
-  position: absolute;
+  position: relative;
   width: 300px;
   height: 100px;
   margin: 0 auto;
   opacity: 0.8;
   display: block;
-  z-index: 50;
-  pointer-events: none;
+  z-index: 10;
+  overflow: visible;
 }
 
 .guitar-design::before {
@@ -72,7 +72,7 @@
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--primary), transparent);
   display: block;
-  z-index: 51;
+  z-index: 11;
 }
 
 .guitar-string {
@@ -82,7 +82,7 @@
   background: linear-gradient(90deg, transparent, var(--primary), transparent);
   animation: stringVibrate 3s infinite ease-in-out;
   display: block;
-  z-index: 52;
+  z-index: 12;
 }
 
 .guitar-design::after {
@@ -97,7 +97,7 @@
   border-radius: 50%;
   opacity: 0.6;
   display: block;
-  z-index: 53;
+  z-index: 13;
 }
 
 @keyframes stringVibrate {
