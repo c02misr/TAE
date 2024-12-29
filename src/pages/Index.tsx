@@ -1,5 +1,6 @@
 import BookNowDialog from "@/components/BookNowDialog";
 import Navbar from "@/components/Navbar";
+import { Music } from "lucide-react";
 
 const Index = () => {
   return (
@@ -7,12 +8,10 @@ const Index = () => {
       <Navbar />
       
       <main className="pt-24 container mx-auto px-4">
-        <div className="guitar-design">
-          <div className="guitar-strings">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="guitar-string" />
-            ))}
-          </div>
+        <div className="music-notes">
+          {[...Array(5)].map((_, i) => (
+            <Music key={i} className="music-note" />
+          ))}
         </div>
         
         <h1 className="text-5xl md:text-7xl text-center font-semibold mb-16">
