@@ -16,8 +16,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      <main className="pt-24 container mx-auto px-4">
-        <div className="guitar-design mb-12">
+      <main className="relative pt-24 container mx-auto px-4">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 guitar-design">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="guitar-string" />
           ))}
