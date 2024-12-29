@@ -13,7 +13,7 @@ const About = () => {
           <ArrowLeft className="w-6 h-6" />
         </Link>
         
-        <h1 className="text-4xl md:text-5xl text-center font-semibold mb-16">About Us</h1>
+        <h1 className="text-4xl md:text-5xl text-center font-semibold mb-16">Meet the Trio</h1>
         
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {["Tim", "Annie", "Eddie"].map((name, i) => (
