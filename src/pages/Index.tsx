@@ -19,11 +19,11 @@ const Index = () => {
         </div>
         
         {/* Logo */}
-        <div className="absolute top-24 right-8 z-20 w-32 h-32 md:w-40 md:h-40">
+        <div className="absolute top-24 right-8 z-20">
           <img 
             src="/lovable-uploads/006fb8ee-4f41-437c-b60c-ad6e47e9c360.png" 
             alt="TAE Logo" 
-            className="w-full h-full object-contain animate-fade-in"
+            className="w-[200px] h-auto object-contain animate-fade-in"
           />
         </div>
 
