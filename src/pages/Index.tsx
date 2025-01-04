@@ -17,6 +17,16 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
         </div>
+        
+        {/* Logo */}
+        <div className="absolute top-24 right-8 z-20 w-32 h-32 md:w-40 md:h-40">
+          <img 
+            src="/lovable-uploads/7459477a-12d4-4ae0-8a6b-f3acd3b9beb6.png" 
+            alt="TAE Logo" 
+            className="w-full h-full object-contain animate-fade-in"
+          />
+        </div>
+
         <div className="relative z-10 text-white pt-24 container mx-auto px-4">
           <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
             <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap tracking-wide">
@@ -26,6 +36,7 @@ const Index = () => {
             </h1>
           </div>
         </div>
+
         <div className="absolute bottom-8 right-8 max-w-2xl z-10 animate-slide-in-right">
           <div className="backdrop-blur-lg bg-black/30 p-10 rounded-lg border border-white/10 shadow-2xl transition-all duration-300 hover:translate-x-2 hover:bg-black/40">
             <p className="text-white text-xl leading-relaxed font-light">
