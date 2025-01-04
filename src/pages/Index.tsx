@@ -69,26 +69,56 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="trio" className="py-24 bg-white">
+      <section id="about" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl text-center font-semibold mb-16">Meet the Trio</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {["Tim", "Annie", "Eddie"].map((name, i) => (
-              <div key={i} className="space-y-4">
-                <div className="aspect-square bg-muted rounded-lg overflow-hidden">
-                  <img
-                    src={`/placeholder.svg`}
-                    alt={`${name}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-2xl font-semibold">{name}</h3>
-                <p className="text-lg text-muted-foreground">
-                  ......
-                </p>
+          <div className="max-w-4xl mx-auto">
+            <Carousel opts={{ loop: true }}>
+              <CarouselContent>
+                {[
+                  {
+                    name: "Tim",
+                    description: "Lead vocals and acoustic guitar, Tim brings decades of experience performing folk and rock music. His passion for acoustic arrangements and harmonies helps shape the band's signature sound.",
+                    image: "/placeholder.svg"
+                  },
+                  {
+                    name: "Annie",
+                    description: "Adding beautiful harmonies and rhythm guitar, Annie's musical journey spans multiple genres. Her versatile style and creative arrangements contribute to the band's unique interpretations of classic songs.",
+                    image: "/placeholder.svg"
+                  },
+                  {
+                    name: "Eddie",
+                    description: "Master of percussion and vocal harmonies, Eddie's musical background in folk and jazz adds depth to the band's acoustic sound. His innovative approach to rhythm keeps our performances dynamic and engaging.",
+                    image: "/placeholder.svg"
+                  }
+                ].map((member, index) => (
+                  <CarouselItem key={index}>
+                    <div className="flex flex-col md:flex-row gap-8 items-center p-6">
+                      <div className="w-full md:w-1/2">
+                        <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="w-full md:w-1/2 text-left space-y-4">
+                        <h3 className="text-3xl font-semibold">{member.name}</h3>
+                        <p className="text-xl text-muted-foreground leading-relaxed">
+                          {member.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="hidden md:block">
+                <CarouselPrevious className="-left-16 bg-white/80 hover:bg-white" />
+                <CarouselNext className="-right-16 bg-white/80 hover:bg-white" />
               </div>
-            ))}
+            </Carousel>
           </div>
         </div>
       </section>
