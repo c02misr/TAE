@@ -22,7 +22,7 @@ const Index = () => {
         </div>
         
         {/* Logos Container */}
-        <div className="absolute top-16 md:top-24 right-4 md:right-8 z-20 flex flex-col gap-3 md:gap-4">
+        <div className="absolute top-16 md:top-24 right-4 md:right-8 z-20 hidden md:flex flex-col gap-3 md:gap-4">
           {/* Original Logo */}
           <img 
             src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
@@ -34,6 +34,20 @@ const Index = () => {
             src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
             alt="TAE Logo Alternative" 
             className="w-[120px] md:w-[200px] h-auto object-contain animate-fade-in"
+          />
+        </div>
+
+        {/* Mobile Logos - Positioned below title */}
+        <div className="md:hidden absolute top-[45%] right-4 z-20 flex flex-col gap-3">
+          <img 
+            src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
+            alt="TAE Logo" 
+            className="w-[100px] h-auto object-contain animate-fade-in"
+          />
+          <img 
+            src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
+            alt="TAE Logo Alternative" 
+            className="w-[100px] h-auto object-contain animate-fade-in"
           />
         </div>
 
@@ -98,10 +112,8 @@ const Index = () => {
           
           <div className="max-w-4xl mx-auto">
             {isMobile && (
-              <div className="flex items-center justify-center gap-2 mb-4 text-muted-foreground animate-pulse">
-                <ChevronLeft className="w-4 h-4" />
-                <span className="text-sm">Swipe to explore</span>
-                <ChevronRight className="w-4 h-4" />
+              <div className="flex items-center justify-center mb-4 text-muted-foreground">
+                <span className="text-sm animate-pulse">swipe</span>
               </div>
             )}
             <Carousel opts={{ loop: true }} className="px-4 md:px-0">
@@ -159,7 +171,7 @@ const Index = () => {
       <section id="contact" className="py-12 md:py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-5xl mb-4 md:mb-8">Contact</h2>
-          <p className="text-lg md:text-2xl mb-4 md:mb-8">Taeinfo@gmail.com</p>
+          <p className="text-lg md:text-2xl mb-4 md:mb-8">tae.livemusic.info@gmail.com</p>
           <div className="flex justify-center gap-4 md:gap-6">
             <a href="https://www.instagram.com/timelessacousticechoes/" 
                target="_blank" 
