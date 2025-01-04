@@ -11,11 +11,11 @@ const Index = () => {
       <section className="h-screen relative bg-[#2b2b2b] flex flex-col items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/39c5267e-214c-479d-b05b-270cd7909281.png" 
-            alt="Acoustic guitar" 
-            className="w-full h-full object-cover opacity-80"
+            src="/lovable-uploads/125ad645-543b-41c1-82d3-ecdafa7bc42b.png" 
+            alt="Timeless Acoustic Echoes performing" 
+            className="w-full h-full object-cover opacity-90"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20" />
         </div>
         <div className="relative z-10 text-white text-right w-full container mx-auto px-4">
           <h1 className="text-7xl md:text-9xl font-semibold mb-4">
