@@ -17,10 +17,10 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative z-10 text-white pt-20 container mx-auto px-4">
-          <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg">
-            <h1 className="text-7xl md:text-9xl font-semibold">
-              Timeless<br />Acoustic<br />Echoes
+        <div className="relative z-10 text-white pt-12 container mx-auto px-4">
+          <div className="backdrop-blur-md bg-black/20 inline-block p-6 rounded-lg">
+            <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap">
+              Timeless Acoustic Echoes
             </h1>
           </div>
         </div>
