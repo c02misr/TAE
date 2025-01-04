@@ -8,16 +8,20 @@ const Navbar = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex-1 flex gap-6">
-          <Link 
-            to="/" 
+          <button 
+            onClick={scrollToTop}
             className="text-lg hover:text-primary transition-colors"
           >
             Home
-          </Link>
+          </button>
           <button 
             onClick={() => scrollToSection('trio')} 
             className="text-lg hover:text-primary transition-colors"

@@ -8,15 +8,19 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="h-screen relative bg-[#f5f0ea] flex items-center justify-center">
+      <section className="h-screen relative bg-[#f5f0ea] flex flex-col items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/10" />
         <div className="music-notes absolute w-full">
           {[...Array(5)].map((_, i) => (
             <Music key={i} className="music-note" />
           ))}
         </div>
-        <h1 className="text-7xl md:text-9xl font-semibold mb-16 relative z-10">
+        <h1 className="text-7xl md:text-9xl font-semibold mb-8 relative z-10">
           Timeless Acoustic Echoes
         </h1>
+        <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl text-center mx-auto px-4 relative z-10">
+          Experience the harmonious blend of classical and contemporary acoustic music
+        </p>
       </section>
 
       {/* Meet the Band Section */}
