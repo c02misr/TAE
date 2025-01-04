@@ -29,7 +29,7 @@ const Navbar = () => {
             Music
           </button>
           <button 
-            onClick={() => scrollToSection('trio')} 
+            onClick={() => scrollToSection('about')} 
             className="text-lg text-white hover:text-primary transition-colors"
           >
             About

@@ -20,9 +20,9 @@ const Index = () => {
         <div className="relative z-10 text-white pt-24 container mx-auto px-4">
           <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
             <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap tracking-wide">
-              <span className="text-[#8B0000]">T</span>imeless{" "}
-              <span className="text-[#8B0000]">A</span>coustic{" "}
-              <span className="text-[#8B0000]">E</span>choes
+              <span className="text-white">T</span><span className="text-[#ea384c]">imeless</span>{" "}
+              <span className="text-white">A</span><span className="text-[#ea384c]">coustic</span>{" "}
+              <span className="text-white">E</span><span className="text-[#ea384c]">choes</span>
             </h1>
           </div>
         </div>
