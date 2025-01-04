@@ -8,22 +8,21 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="h-screen relative bg-[#2b2b2b] flex flex-col items-center justify-center overflow-hidden">
+      <section className="h-screen relative bg-[#2b2b2b] flex flex-col items-center justify-start overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="/lovable-uploads/125ad645-543b-41c1-82d3-ecdafa7bc42b.png" 
             alt="Timeless Acoustic Echoes performing" 
-            className="w-full h-full object-cover opacity-90"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20" />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative z-10 text-white text-right w-full container mx-auto px-4">
-          <h1 className="text-7xl md:text-9xl font-semibold mb-4">
-            Timeless<br />Acoustic<br />Echoes
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 ml-auto max-w-xl">
-            Experience the harmonious blend of classical and contemporary acoustic music
-          </p>
+        <div className="relative z-10 text-white pt-20 container mx-auto px-4">
+          <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg">
+            <h1 className="text-7xl md:text-9xl font-semibold">
+              Timeless<br />Acoustic<br />Echoes
+            </h1>
+          </div>
         </div>
       </section>
 
