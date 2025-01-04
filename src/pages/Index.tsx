@@ -20,7 +20,7 @@ const Index = () => {
       </section>
 
       {/* Meet the Band Section */}
-      <section className="py-24 bg-white">
+      <section id="trio" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl mb-12 text-center">Meet the Trio</h2>
           <Carousel className="max-w-4xl mx-auto">
@@ -42,7 +42,7 @@ const Index = () => {
       </section>
 
       {/* Discography Section */}
-      <section className="py-24 bg-[#f5f0ea]">
+      <section id="discography" className="py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl mb-12 text-center">Discography</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-white">
+      <section id="contact" className="py-24 bg-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl mb-8">Contact</h2>
           <p className="text-2xl mb-8">Taeinfo@gmail.com</p>
