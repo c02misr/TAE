@@ -13,21 +13,19 @@ const Index = () => {
           <img 
             src="/lovable-uploads/125ad645-543b-41c1-82d3-ecdafa7bc42b.png" 
             alt="Timeless Acoustic Echoes performing" 
-            className="w-full h-full object-cover opacity-90"
+            className="w-full h-full object-cover opacity-90 blur-[2px]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/20" />
         </div>
         <div className="relative z-10 text-white text-right w-full container mx-auto px-4">
-          <h1 className="text-7xl md:text-9xl font-semibold mb-4">
-            Timeless<br />Acoustic<br />Echoes
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 ml-auto max-w-xl">
-            Experience the harmonious blend of classical and contemporary acoustic music
-          </p>
+          <div className="backdrop-blur-sm bg-black/30 p-8 inline-block ml-auto">
+            <h1 className="text-7xl md:text-9xl font-normal mb-4">
+              Timeless<br />Acoustic<br />Echoes
+            </h1>
+          </div>
         </div>
       </section>
 
-      {/* Meet the Band Section */}
       <section id="trio" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl mb-12 text-center">Meet the Trio</h2>
