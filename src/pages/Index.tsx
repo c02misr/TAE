@@ -13,15 +13,18 @@ const Index = () => {
           <img 
             src="/lovable-uploads/125ad645-543b-41c1-82d3-ecdafa7bc42b.png" 
             alt="Timeless Acoustic Echoes performing" 
-            className="w-full h-full object-cover animate-fade-in"
+            className="w-full h-full object-cover animate-fade-in brightness-[0.85]"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70" />
         </div>
         <div className="relative z-10 text-white pt-24 container mx-auto px-4">
-          <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
-            <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap tracking-wide">
-              Timeless Acoustic Echoes
+          <div className="backdrop-blur-md bg-black/20 p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
+            <h1 className="text-4xl md:text-7xl font-semibold tracking-wide leading-tight">
+              <span className="text-[#ea384c]">T</span>imeless 
+              {" "}<span className="text-[#ea384c]">A</span>coustic 
+              {" "}<span className="text-[#ea384c]">E</span>choes
             </h1>
+            <div className="w-1/2 h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent mx-auto mt-4" />
           </div>
         </div>
         <div className="absolute bottom-8 right-8 max-w-2xl z-10 animate-slide-in-right">
