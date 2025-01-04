@@ -18,11 +18,18 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
         </div>
         
-        {/* Logo */}
-        <div className="absolute top-24 right-8 z-20">
+        {/* Logos Container */}
+        <div className="absolute top-24 right-8 z-20 flex flex-col gap-4">
+          {/* Original Logo */}
           <img 
             src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
             alt="TAE Logo" 
+            className="w-[200px] h-auto object-contain animate-fade-in"
+          />
+          {/* New Logo */}
+          <img 
+            src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
+            alt="TAE Logo Alternative" 
             className="w-[200px] h-auto object-contain animate-fade-in"
           />
         </div>
