@@ -17,21 +17,21 @@ const Index = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
         </div>
-        <div className="relative z-10 text-white pt-32 container mx-auto px-4">
+        <div className="relative z-10 text-white pt-24 container mx-auto px-4">
           <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in">
             <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap tracking-wide">
               Timeless Acoustic Echoes
             </h1>
           </div>
         </div>
-        <div className="absolute bottom-8 right-8 max-w-xl z-10 animate-slide-in-right">
-          <div className="backdrop-blur-md bg-black/20 p-8 rounded-lg border border-white/10 shadow-2xl">
-            <p className="text-white text-lg leading-relaxed font-light">
+        <div className="absolute bottom-8 right-8 max-w-2xl z-10 animate-slide-in-right">
+          <div className="backdrop-blur-lg bg-black/30 p-10 rounded-lg border border-white/10 shadow-2xl">
+            <p className="text-white text-xl leading-relaxed font-light">
               A trio comprising a unique multi-generational line-up, both in band members and in cover
               song material. We strive to bring our audiences acoustic guitar music blended with beautiful melodies/harmonies found
               in great songs from the 1960s to the 2020s!
             </p>
-            <p className="text-white/80 text-sm mt-4 leading-relaxed">
+            <p className="text-white/90 text-lg mt-6 leading-relaxed">
               Our musical genres include Folk, Folk Rock, Soft Rock, Pop Rock,
               Alternative, Pop, and Jazz Pop. We provide our own PA equipment: Microphones, mic stands, and cables; audio mixing
               board (12-channel Mackie ProFX12v3); two BOSS acoustic amplifiers for projecting stereo (L/R) sound, as mixed in
