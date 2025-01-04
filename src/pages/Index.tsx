@@ -1,8 +1,11 @@
 import Navbar from "@/components/Navbar";
-import { Music, Instagram, Youtube } from "lucide-react";
+import { Music, Instagram, Youtube, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Index = () => {
+  const isMobile = useIsMobile();
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -94,6 +97,13 @@ const Index = () => {
           <h2 className="text-2xl md:text-5xl text-center font-semibold mb-8 md:mb-16">Meet the Trio</h2>
           
           <div className="max-w-4xl mx-auto">
+            {isMobile && (
+              <div className="flex items-center justify-center gap-2 mb-4 text-muted-foreground animate-pulse">
+                <ChevronLeft className="w-4 h-4" />
+                <span className="text-sm">Swipe to explore</span>
+                <ChevronRight className="w-4 h-4" />
+              </div>
+            )}
             <Carousel opts={{ loop: true }} className="px-4 md:px-0">
               <CarouselContent>
                 {[
