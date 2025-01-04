@@ -8,19 +8,23 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="h-screen relative bg-[#f5f0ea] flex flex-col items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/10" />
-        <div className="music-notes absolute w-full">
-          {[...Array(5)].map((_, i) => (
-            <Music key={i} className="music-note" />
-          ))}
+      <section className="h-screen relative bg-[#2b2b2b] flex flex-col items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/lovable-uploads/39c5267e-214c-479d-b05b-270cd7909281.png" 
+            alt="Acoustic guitar" 
+            className="w-full h-full object-cover opacity-80"
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
-        <h1 className="text-7xl md:text-9xl font-semibold mb-8 relative z-10">
-          Timeless Acoustic Echoes
-        </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl text-center mx-auto px-4 relative z-10">
-          Experience the harmonious blend of classical and contemporary acoustic music
-        </p>
+        <div className="relative z-10 text-white text-right w-full container mx-auto px-4">
+          <h1 className="text-7xl md:text-9xl font-semibold mb-4">
+            Timeless<br />Acoustic<br />Echoes
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-200 ml-auto max-w-xl">
+            Experience the harmonious blend of classical and contemporary acoustic music
+          </p>
+        </div>
       </section>
 
       {/* Meet the Band Section */}
