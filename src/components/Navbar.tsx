@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-transparent z-50">
+    <nav className="absolute top-0 w-full bg-transparent z-50">
       <div className="container mx-auto px-4 h-16 flex items-center justify-center">
         <div className="flex gap-12">
           <button 
