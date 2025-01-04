@@ -68,8 +68,33 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section id="trio" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl text-center font-semibold mb-16">Meet the Trio</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {["Tim", "Annie", "Eddie"].map((name, i) => (
+              <div key={i} className="space-y-4">
+                <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                  <img
+                    src={`/placeholder.svg`}
+                    alt={`${name}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl font-semibold">{name}</h3>
+                <p className="text-lg text-muted-foreground">
+                  ......
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-white">
+      <section id="contact" className="py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl mb-8">Contact</h2>
           <p className="text-2xl mb-8">Taeinfo@gmail.com</p>

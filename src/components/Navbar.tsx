@@ -23,16 +23,16 @@ const Navbar = () => {
             Home
           </button>
           <button 
-            onClick={() => scrollToSection('trio')} 
-            className="text-lg text-white hover:text-primary transition-colors"
-          >
-            About
-          </button>
-          <button 
             onClick={() => scrollToSection('discography')} 
             className="text-lg text-white hover:text-primary transition-colors"
           >
             Music
+          </button>
+          <button 
+            onClick={() => scrollToSection('trio')} 
+            className="text-lg text-white hover:text-primary transition-colors"
+          >
+            About
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
