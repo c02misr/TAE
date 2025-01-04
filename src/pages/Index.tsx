@@ -31,7 +31,7 @@ const Index = () => {
           />
           {/* New Logo */}
           <img 
-            src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
+            src="/lovable-uploads/50a10782-72c0-496c-abc9-819cbfb08d2d.png" 
             alt="TAE Logo Alternative" 
             className="w-[120px] md:w-[200px] h-auto object-contain animate-fade-in"
           />
@@ -46,17 +46,17 @@ const Index = () => {
             </h1>
           </div>
 
-          {/* Mobile Logos - Positioned between title and navbar */}
-          <div className="md:hidden flex justify-center gap-4 mt-4">
+          {/* Mobile Logos - More subtle positioning */}
+          <div className="md:hidden flex justify-end gap-3 mt-2 opacity-80">
             <img 
               src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
               alt="TAE Logo" 
-              className="w-[80px] h-auto object-contain animate-fade-in"
+              className="w-[60px] h-auto object-contain animate-fade-in"
             />
             <img 
               src="/lovable-uploads/959f11e7-1d2b-4a09-abf9-55c394a793cc.png" 
               alt="TAE Logo Alternative" 
-              className="w-[80px] h-auto object-contain animate-fade-in"
+              className="w-[60px] h-auto object-contain animate-fade-in"
             />
           </div>
         </div>
