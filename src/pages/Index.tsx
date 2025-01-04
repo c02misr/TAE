@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const Index = () => {
   return (
@@ -19,11 +20,16 @@ const Index = () => {
         </div>
         
         {/* Logo */}
-        <div className="absolute top-24 right-8 z-20">
+        <div className="absolute top-24 right-8 z-20 flex flex-col items-end gap-4">
           <img 
             src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
             alt="TAE Logo" 
             className="w-[200px] h-auto object-contain animate-fade-in"
+          />
+          <img 
+            src="/lovable-uploads/b5d0d494-003a-4cd8-bfa8-4490b82f6a62.png" 
+            alt="TAE Logo Secondary" 
+            className="w-[150px] h-auto object-contain animate-fade-in"
           />
         </div>
 
@@ -50,6 +56,45 @@ const Index = () => {
               board (12-channel Mackie ProFX12v3); two BOSS acoustic amplifiers for projecting stereo (L/R) sound, as mixed in
               the mixing board. Each amp provides 60W of sound.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Tim Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-start">
+            <div className="w-full md:w-1/3">
+              <div className="rounded-full overflow-hidden border-4 border-primary/20">
+                <img 
+                  src="/lovable-uploads/ca4848ce-dccc-46aa-8158-349cb4009805.png"
+                  alt="Tim Press"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div className="w-full md:w-2/3">
+              <h2 className="text-3xl font-semibold mb-6">Tim Press</h2>
+              <ScrollArea className="h-[400px] w-full rounded-md border p-4">
+                <div className="text-lg text-muted-foreground space-y-4">
+                  <p>
+                    Tim Press was born and raised in Southern California, and lived his entire life in this area. As a child Tim loved music, and became a self-taught
+                    musician, beginning with piano (age 11) and guitar (age 14). He played by ear, learned to sing, and relished the great music of the era. Throughout
+                    his life Tim dabbled in song writing, played guitar and piano, sang, and thoroughly enjoyed music as a hobby.
+                  </p>
+                  <p>
+                    As a teenager, Tim became interested in meteorology, and found joy in learning about the weather and how nature gives rise to the wondrous
+                    changes that we all see from day to day. In college Tim majored in atmospheric sciences, and learned the necessary math & physics that underpin
+                    these fields. He graduated and went on to a long career in atmospheric sciences in the aerospace industry.
+                  </p>
+                  <p>
+                    Tim now has a second career that focuses on his life-long passion for music. In 2023 Tim began taking advanced lessons with guitar instructor (and
+                    now band member) Eddie, and in 2024 at the same music school Tim was fortunate to meet Annabelle and Stacy. With the acoustic guitars and our
+                    blended melody/harmony vocals, we knew we had something special. In August 2024, the cover-band Timeless Acoustic Echoes was born.
+                  </p>
+                </div>
+              </ScrollArea>
+            </div>
           </div>
         </div>
       </section>
@@ -92,8 +137,8 @@ const Index = () => {
                 {[
                   {
                     name: "Tim",
-                    description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
-                    image: "/placeholder.svg"
+                    description: "Tim Press was born and raised in Southern California, and lived his entire life in this area. As a child Tim loved music, and became a self-taught musician, beginning with piano (age 11) and guitar (age 14). He played by ear, learned to sing, and relished the great music of the era. Throughout his life Tim dabbled in song writing, played guitar and piano, sang, and thoroughly enjoyed music as a hobby.",
+                    image: "/lovable-uploads/ca4848ce-dccc-46aa-8158-349cb4009805.png"
                   },
                   {
                     name: "Annabelle",
