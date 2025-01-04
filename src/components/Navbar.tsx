@@ -13,43 +13,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur z-50 border-b">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex-1 flex gap-6">
+    <nav className="fixed top-0 w-full bg-transparent z-50">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-center">
+        <div className="flex gap-12">
           <button 
             onClick={scrollToTop}
-            className="text-lg hover:text-primary transition-colors"
+            className="text-lg text-white hover:text-primary transition-colors"
           >
             Home
           </button>
           <button 
             onClick={() => scrollToSection('trio')} 
-            className="text-lg hover:text-primary transition-colors"
+            className="text-lg text-white hover:text-primary transition-colors"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('discography')} 
-            className="text-lg hover:text-primary transition-colors"
+            className="text-lg text-white hover:text-primary transition-colors"
           >
             Music
           </button>
           <button 
             onClick={() => scrollToSection('contact')} 
-            className="text-lg hover:text-primary transition-colors"
+            className="text-lg text-white hover:text-primary transition-colors"
           >
             Contact
           </button>
-        </div>
-        
-        <div className="flex-1 text-center">
-          <Link to="/" className="text-2xl font-semibold">
-            T.A.E
-          </Link>
-        </div>
-        
-        <div className="flex-1">
-          {/* Empty div to maintain layout */}
         </div>
       </div>
     </nav>
