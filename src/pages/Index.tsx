@@ -100,7 +100,7 @@ const Index = () => {
                   {
                     name: "Tim",
                     description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
-                    image: "/placeholder.svg"
+                    image: "/lovable-uploads/9a347345-b6e9-4e1e-b34f-b821e8a93715.png"
                   },
                   {
                     name: "Annabelle",
@@ -116,7 +116,7 @@ const Index = () => {
                   <CarouselItem key={index}>
                     <div className="flex flex-col md:flex-row gap-8 items-center p-6">
                       <div className="w-full md:w-1/2">
-                        <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                        <div className="aspect-square bg-muted rounded-full overflow-hidden border-4 border-primary/20">
                           <img
                             src={member.image}
                             alt={member.name}
