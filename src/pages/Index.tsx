@@ -79,17 +79,17 @@ const Index = () => {
                 {[
                   {
                     name: "Tim",
-                    description: "Lead vocals and acoustic guitar, Tim brings decades of experience performing folk and rock music. His passion for acoustic arrangements and harmonies helps shape the band's signature sound.",
+                    description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
                     image: "/placeholder.svg"
                   },
                   {
                     name: "Annabelle",
-                    description: "Adding beautiful harmonies and rhythm guitar, Annabelle's musical journey spans multiple genres. Her versatile style and creative arrangements contribute to the band's unique interpretations of classic songs.",
+                    description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
                     image: "/placeholder.svg"
                   },
                   {
                     name: "Eddie",
-                    description: "Master of percussion and vocal harmonies, Eddie's musical background in folk and jazz adds depth to the band's acoustic sound. His innovative approach to rhythm keeps our performances dynamic and engaging.",
+                    description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
                     image: "/placeholder.svg"
                   }
                 ].map((member, index) => (
