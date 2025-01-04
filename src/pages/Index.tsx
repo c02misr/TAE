@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { Music, Instagram, Youtube, ChevronLeft, ChevronRight } from "lucide-react";
+import { Music, Instagram, Youtube } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -21,7 +21,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
         </div>
         
-        {/* Logos Container */}
+        {/* Desktop Logos Container */}
         <div className="absolute top-16 md:top-24 right-4 md:right-8 z-20 hidden md:flex flex-col gap-3 md:gap-4">
           {/* Original Logo */}
           <img 
@@ -37,20 +37,6 @@ const Index = () => {
           />
         </div>
 
-        {/* Mobile Logos - Positioned below title */}
-        <div className="md:hidden absolute top-[45%] right-4 z-20 flex flex-col gap-3">
-          <img 
-            src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
-            alt="TAE Logo" 
-            className="w-[100px] h-auto object-contain animate-fade-in"
-          />
-          <img 
-            src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
-            alt="TAE Logo Alternative" 
-            className="w-[100px] h-auto object-contain animate-fade-in"
-          />
-        </div>
-
         <div className="relative z-10 text-white pt-28 md:pt-24 container mx-auto px-4">
           <div className="backdrop-blur-md bg-black/20 inline-block p-4 md:p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
             <h1 className="text-2xl md:text-7xl font-semibold tracking-wide leading-tight">
@@ -58,6 +44,20 @@ const Index = () => {
               <span className="text-[#bb1c26]">A</span><span className="text-white">coustic</span>{" "}
               <span className="text-[#bb1c26]">E</span><span className="text-white">choes</span>
             </h1>
+          </div>
+
+          {/* Mobile Logos - Positioned between title and navbar */}
+          <div className="md:hidden flex justify-center gap-4 mt-4">
+            <img 
+              src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
+              alt="TAE Logo" 
+              className="w-[80px] h-auto object-contain animate-fade-in"
+            />
+            <img 
+              src="/lovable-uploads/959f11e7-1d2b-4a09-abf9-55c394a793cc.png" 
+              alt="TAE Logo Alternative" 
+              className="w-[80px] h-auto object-contain animate-fade-in"
+            />
           </div>
         </div>
 
