@@ -19,24 +19,24 @@ const Index = () => {
         </div>
         
         {/* Logos Container */}
-        <div className="absolute top-24 right-8 z-20 flex flex-col gap-4">
+        <div className="absolute top-20 md:top-24 right-4 md:right-8 z-20 flex flex-col gap-4">
           {/* Original Logo */}
           <img 
             src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
             alt="TAE Logo" 
-            className="w-[200px] h-auto object-contain animate-fade-in"
+            className="w-[150px] md:w-[200px] h-auto object-contain animate-fade-in"
           />
           {/* New Logo */}
           <img 
             src="/lovable-uploads/2e8bf215-0013-454a-afaf-ff2cc8ea9a0c.png" 
             alt="TAE Logo Alternative" 
-            className="w-[200px] h-auto object-contain animate-fade-in"
+            className="w-[150px] md:w-[200px] h-auto object-contain animate-fade-in"
           />
         </div>
 
-        <div className="relative z-10 text-white pt-24 container mx-auto px-4">
-          <div className="backdrop-blur-md bg-black/20 inline-block p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
-            <h1 className="text-4xl md:text-7xl font-semibold whitespace-nowrap tracking-wide">
+        <div className="relative z-10 text-white pt-16 md:pt-24 container mx-auto px-4">
+          <div className="backdrop-blur-md bg-black/20 inline-block p-4 md:p-8 rounded-lg border border-white/10 shadow-2xl animate-scale-in transition-all duration-300 hover:scale-105 hover:bg-black/30">
+            <h1 className="text-3xl md:text-7xl font-semibold tracking-wide">
               <span className="text-[#bb1c26]">T</span><span className="text-white">imeless</span>{" "}
               <span className="text-[#bb1c26]">A</span><span className="text-white">coustic</span>{" "}
               <span className="text-[#bb1c26]">E</span><span className="text-white">choes</span>
@@ -44,14 +44,14 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-8 right-8 max-w-2xl z-10 animate-slide-in-right">
-          <div className="backdrop-blur-lg bg-black/30 p-10 rounded-lg border border-white/10 shadow-2xl transition-all duration-300 hover:translate-x-2 hover:bg-black/40">
-            <p className="text-white text-xl leading-relaxed font-light">
+        <div className="absolute bottom-8 right-4 md:right-8 max-w-2xl z-10 animate-slide-in-right">
+          <div className="backdrop-blur-lg bg-black/30 p-6 md:p-10 rounded-lg border border-white/10 shadow-2xl transition-all duration-300 hover:translate-x-2 hover:bg-black/40">
+            <p className="text-lg md:text-xl text-white leading-relaxed font-light">
               A trio comprising a unique multi-generational line-up, both in band members and in cover
               song material. We strive to bring our audiences acoustic guitar music blended with beautiful melodies/harmonies found
               in great songs from the 1960s to the 2020s!
             </p>
-            <p className="text-white/90 text-lg mt-6 leading-relaxed">
+            <p className="text-base md:text-lg text-white/90 mt-4 md:mt-6 leading-relaxed">
               Our musical genres include Folk, Folk Rock, Soft Rock, Pop Rock,
               Alternative, Pop, and Jazz Pop. We provide our own PA equipment: Microphones, mic stands, and cables; audio mixing
               board (12-channel Mackie ProFX12v3); two BOSS acoustic amplifiers for projecting stereo (L/R) sound, as mixed in
@@ -62,10 +62,10 @@ const Index = () => {
       </section>
 
       {/* Discography Section */}
-      <section id="discography" className="py-24 bg-[#f5f0ea]">
+      <section id="discography" className="py-16 md:py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl mb-12 text-center">Discography</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-5xl mb-8 md:mb-12 text-center">Discography</h2>
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             <div className="aspect-video">
               <iframe
                 className="w-full h-full rounded-lg"
@@ -89,9 +89,9 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white">
+      <section id="about" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl text-center font-semibold mb-16">Meet the Trio</h2>
+          <h2 className="text-3xl md:text-5xl text-center font-semibold mb-8 md:mb-16">Meet the Trio</h2>
           
           <div className="max-w-4xl mx-auto">
             <Carousel opts={{ loop: true }}>
@@ -114,7 +114,7 @@ const Index = () => {
                   }
                 ].map((member, index) => (
                   <CarouselItem key={index}>
-                    <div className="flex flex-col md:flex-row gap-8 items-center p-6">
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center p-4 md:p-6">
                       <div className="w-full md:w-1/2">
                         <div className="aspect-square bg-muted rounded-full overflow-hidden border-4 border-primary/20">
                           <img
@@ -125,9 +125,9 @@ const Index = () => {
                         </div>
                       </div>
                       <div className="w-full md:w-1/2 text-left space-y-4">
-                        <h3 className="text-3xl font-semibold">{member.name}</h3>
-                        <div className="max-h-[300px] overflow-y-auto pr-4 custom-scrollbar">
-                          <p className="text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
+                        <h3 className="text-2xl md:text-3xl font-semibold">{member.name}</h3>
+                        <div className="max-h-[250px] md:max-h-[300px] overflow-y-auto pr-4 custom-scrollbar">
+                          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
                             {member.description}
                           </p>
                         </div>
@@ -146,11 +146,11 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-[#f5f0ea]">
+      <section id="contact" className="py-16 md:py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl mb-8">Contact</h2>
-          <p className="text-2xl mb-8">Taeinfo@gmail.com</p>
-          <div className="flex justify-center gap-6">
+          <h2 className="text-3xl md:text-5xl mb-6 md:mb-8">Contact</h2>
+          <p className="text-xl md:text-2xl mb-6 md:mb-8">Taeinfo@gmail.com</p>
+          <div className="flex justify-center gap-4 md:gap-6">
             <a href="https://www.instagram.com/timelessacousticechoes/" 
                target="_blank" 
                rel="noopener noreferrer"
