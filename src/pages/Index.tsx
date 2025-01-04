@@ -99,7 +99,7 @@ const Index = () => {
                 {[
                   {
                     name: "Tim",
-                    description: "Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler.",
+                    description: "Tim Press was born and raised in Southern California, and lived his entire life in this area. As a child Tim loved music, and became a self-taught musician, beginning with piano (age 11) and guitar (age 14). He played by ear, learned to sing, and relished the great music of the era. Throughout his life Tim dabbled in song writing, played guitar and piano, sang, and thoroughly enjoyed music as a hobby.\n\nAs a teenager, Tim became interested in meteorology, and found joy in learning about the weather and how nature gives rise to the wondrous changes that we all see from day to day. In college Tim majored in atmospheric sciences, and learned the necessary math & physics that underpin these fields. He graduated and went on to a long career in atmospheric sciences in the aerospace industry.\n\nTim now has a second career that focuses on his life-long passion for music. In 2023 Tim began taking advanced lessons with guitar instructor (and now band member) Eddie, and in 2024 at the same music school Tim was fortunate to meet Annabelle and Stacy. With the acoustic guitars and our blended melody/harmony vocals, we knew we had something special. In August 2024, the cover-band Timeless Acoustic Echoes was born.",
                     image: "/lovable-uploads/9a347345-b6e9-4e1e-b34f-b821e8a93715.png"
                   },
                   {
@@ -126,9 +126,11 @@ const Index = () => {
                       </div>
                       <div className="w-full md:w-1/2 text-left space-y-4">
                         <h3 className="text-3xl font-semibold">{member.name}</h3>
-                        <p className="text-xl text-muted-foreground leading-relaxed">
-                          {member.description}
-                        </p>
+                        <div className="max-h-[300px] overflow-y-auto pr-4 custom-scrollbar">
+                          <p className="text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
+                            {member.description}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </CarouselItem>
