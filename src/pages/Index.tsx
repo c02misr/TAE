@@ -21,7 +21,7 @@ const Index = () => {
         {/* Logo */}
         <div className="absolute top-24 right-8 z-20">
           <img 
-            src="/lovable-uploads/39c5267e-214c-479d-b05b-270cd7909281.png" 
+            src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
             alt="TAE Logo" 
             className="w-[200px] h-auto object-contain animate-fade-in"
           />
