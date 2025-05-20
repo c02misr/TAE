@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -196,7 +197,10 @@ const Index = () => {
                 {[
                   {
                     name: "Tim",
-                    description: "Tim Press was born and raised in Southern California, and lived his entire life in this area. As a child Tim loved music, and became a self-taught musician, beginning with piano (age 11) and guitar (age 14). He played by ear, learned to sing, and relished the great music of the era. Throughout his life Tim dabbled in song writing, played guitar and piano, sang, and thoroughly enjoyed music as a hobby.\n\nAs a teenager, Tim became interested in meteorology, and found joy in learning about the weather and how nature gives rise to the wondrous changes that we all see from day to day. In college Tim majored in atmospheric sciences, and learned the necessary math & physics that underpin these fields. He graduated and went on to a long career in atmospheric sciences in the aerospace industry.\n\nTim now has a second career that focuses on his life-long passion for music. In 2023 Tim began taking advanced lessons with guitar instructor (and now band member) Eddie, and in 2024 at the same music school Tim was fortunate to meet Annabelle and Stacy. With the acoustic guitars and our blended melody/harmony vocals, we knew we had something special. In August 2024, the cover-band Timeless Acoustic Echoes was born.",
+                    description: "Tim Press was born and raised in Southern California, and lived his entire life in this area. As a child Tim loved music, and became a self-taught musician, beginning with piano (age 11) and guitar (age 14). He played by ear, learned to sing, and relished the great music of the era. Throughout his life Tim dabbled in song writing, played guitar and piano, sang, and thoroughly enjoyed music as a hobby.\n\nAs a teenager, Tim became interested in meteorology, and found joy in learning about the weather and how nature gives rise to the wondrous changes that we all see from day to day. In college Tim majored in atmospheric sciences, and learned the necessary math & physics that underpin these fields. He graduated and went on to a long career in atmospheric sciences in the aerospace industry.\n\nTim now has a second career that focuses on his life-long passion for music. In 2023 Tim began taking advanced lessons with guitar instructor (and now band member) Eddie, and in 2024 at the same music school Tim was fortunate to meet Annabelle and Stacy. With the acoustic guitars and our blended melody/harmony vocals, we knew we had something special. In August 2024, the cover-band Timeless Acoustic Echoes was born.\n\nCheck out Tim's original song on the subject of climate change ",
+                    linkText: "here",
+                    linkUrl: "https://www.youtube.com/watch?v=pAy4Jr5SDwo",
+                    descriptionEnd: ". Tim remains optimistic that humanity can and will do the right things in the coming decades!",
                     image: "/lovable-uploads/9a347345-b6e9-4e1e-b34f-b821e8a93715.png"
                   },
                   {
@@ -226,6 +230,20 @@ const Index = () => {
                         <div className="h-[250px] md:h-[300px] overflow-y-auto pr-4 custom-scrollbar">
                           <p className="text-base md:text-xl text-muted-foreground leading-relaxed whitespace-pre-line">
                             {member.description}
+                            {member.linkText && (
+                              <Button 
+                                variant="link" 
+                                className="px-0 py-0 h-auto text-base md:text-xl text-primary underline-offset-2 hover:underline font-medium"
+                                asChild
+                              >
+                                <a href={member.linkUrl} target="_blank" rel="noopener noreferrer">
+                                  {member.linkText}
+                                </a>
+                              </Button>
+                            )}
+                            {member.descriptionEnd && (
+                              <span>{member.descriptionEnd}</span>
+                            )}
                           </p>
                         </div>
                       </div>
