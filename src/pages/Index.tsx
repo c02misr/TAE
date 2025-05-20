@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -22,18 +21,12 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
         </div>
         
-        {/* Desktop Logos Container */}
+        {/* Desktop Logo - Only showing the original logo now */}
         <div className="absolute top-16 md:top-24 right-4 md:right-8 z-20 hidden md:flex flex-col gap-3 md:gap-4">
           {/* Original Logo */}
           <img 
             src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
             alt="TAE Logo" 
-            className="w-[120px] md:w-[200px] h-auto object-contain animate-fade-in"
-          />
-          {/* New Logo */}
-          <img 
-            src="/lovable-uploads/50a10782-72c0-496c-abc9-819cbfb08d2d.png" 
-            alt="TAE Logo Alternative" 
             className="w-[120px] md:w-[200px] h-auto object-contain animate-fade-in"
           />
         </div>
@@ -47,16 +40,11 @@ const Index = () => {
             </h1>
           </div>
 
-          {/* Mobile Logos - More subtle positioning */}
+          {/* Mobile Logo - Only showing the original logo now */}
           <div className="md:hidden flex justify-end gap-3 mt-2 opacity-80">
             <img 
               src="/lovable-uploads/07d56651-0afb-4355-98b7-a23ef9230ba9.png" 
               alt="TAE Logo" 
-              className="w-[60px] h-auto object-contain animate-fade-in"
-            />
-            <img 
-              src="/lovable-uploads/959f11e7-1d2b-4a09-abf9-55c394a793cc.png" 
-              alt="TAE Logo Alternative" 
               className="w-[60px] h-auto object-contain animate-fade-in"
             />
           </div>
