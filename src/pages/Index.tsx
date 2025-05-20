@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -116,12 +117,12 @@ const Index = () => {
                   {
                     name: "Annabelle",
                     description: "Annabelle Lee is an aspiring musician, singer-songwriter. Music has been intertwined with her life from a young age. Starting with singing, and eventually progressing into instruments like the guitar, drums, ukulele.\n\nAnnabelle has been in choir every year since 4th grade, including Honor Choir starting in 6th grade.\n\nCountless music lessons, rehearsals, summer camps, and performances later, Annabelle is now fortunate enough to be able to sing with Timeless Acoustic Echoes.",
-                    image: "/placeholder.svg"
+                    image: "/lovable-uploads/3fc45c5d-5fad-4c50-b33f-bdc86015ad34.png"
                   },
                   {
                     name: "Eddie",
                     description: "Under construction",
-                    image: "/placeholder.svg"
+                    image: "/lovable-uploads/c879c558-f267-4b69-a8d6-badde487180b.png"
                   }
                 ].map((member, index) => (
                   <CarouselItem key={index}>
