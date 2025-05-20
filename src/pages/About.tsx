@@ -1,7 +1,5 @@
-
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -28,28 +26,9 @@ const About = () => {
                 />
               </div>
               <h3 className="text-2xl font-semibold">{name}</h3>
-              {name === "Tim" ? (
-                <div className="text-lg text-muted-foreground space-y-4">
-                  <p>
-                    ......
-                  </p>
-                  <p>
-                    Check out Tim's original song on the subject of climate change{" "}
-                    <a 
-                      href="https://www.youtube.com/watch?v=pAy4Jr5SDwo" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline"
-                    >
-                      here
-                    </a>. Tim remains optimistic that humanity can and will do the right things in the coming decades!
-                  </p>
-                </div>
-              ) : (
-                <p className="text-lg text-muted-foreground">
-                  ......
-                </p>
-              )}
+              <p className="text-lg text-muted-foreground">
+                ......
+              </p>
             </div>
           ))}
         </div>
