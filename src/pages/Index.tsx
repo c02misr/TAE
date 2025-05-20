@@ -72,7 +72,7 @@ const Index = () => {
       <section id="discography" className="py-12 md:py-24 bg-[#f5f0ea]">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl md:text-5xl mb-6 md:mb-12 text-center">Selected Covers</h2>
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mb-8">
             <div className="aspect-video">
               <iframe
                 className="w-full h-full rounded-lg shadow-lg"
@@ -86,6 +86,28 @@ const Index = () => {
               <iframe
                 className="w-full h-full rounded-lg shadow-lg"
                 src="https://www.youtube.com/embed/wpqk5LnyeUQ?start=3"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          
+          {/* New videos */}
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/ySOsxC-82IE?start=11"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/WjWE_iquyPE?start=20"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
