@@ -30,10 +30,10 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-semibold">{name}</h3>
               {name === "Tim" ? (
-                <ScrollArea className="h-64 rounded-md">
-                  <div className="text-lg text-muted-foreground space-y-4 p-1">
+                <ScrollArea className="h-64 rounded-md border p-2">
+                  <div className="text-lg text-muted-foreground space-y-4">
                     <p>
-                      ......
+                      Tim is a passionate guitarist with over 20 years of experience playing acoustic folk and indie music. His soulful melodies and introspective lyrics have captivated audiences across the country.
                     </p>
                     <p>
                       Check out Tim's original song on the subject of climate change{" "}
@@ -50,7 +50,10 @@ const About = () => {
                 </ScrollArea>
               ) : (
                 <p className="text-lg text-muted-foreground">
-                  ......
+                  {name === "Annie" 
+                    ? "Annie is a classically trained pianist who brings a unique blend of classical technique and contemporary style to the trio. Her arrangements add depth and complexity to their performances."
+                    : "Eddie is the rhythmic foundation of the group, with expertise in percussion and bass. His versatile playing style adapts seamlessly between gentle folk ballads and more energetic numbers."
+                  }
                 </p>
               )}
             </div>
