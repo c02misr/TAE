@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -210,7 +209,7 @@ const Index = () => {
                   },
                   {
                     name: "Eddie",
-                    description: "Under construction",
+                    description: "Eddie Oropeza is a lead guitarist and professional musician in multiple bands. Eddie plays songs ranging the full spectrum from mellow folk and acoustic ballads to the highest energy lead guitar parts in modern punk rock/thrash bands. If he's not on a national or an international tour, or at a gig somewhere in Southern California, Eddie spends time as an accomplished guitar teacher, with students ranging in age from the very young to the most senior of the boomers. Eddie's talent as a guitarist, bassist, and ukulele player, and his patience when teaching all skill levels, is a unique combination that Timeless Acoustics Echoes is fortunate to have!",
                     image: "/lovable-uploads/c879c558-f267-4b69-a8d6-badde487180b.png"
                   }
                 ].map((member, index) => (
