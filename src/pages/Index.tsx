@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import { Music, Instagram, Youtube, ChevronLeft, ChevronRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -124,6 +125,17 @@ const Index = () => {
                       />
                     </div>
                   </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/eAnWxSJxcw8"
+                        title="YouTube Shorts - Timeless Acoustic Echoes"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
                 </CarouselContent>
                 <div className="flex justify-center gap-2 mt-4">
                   <CarouselPrevious className="relative inset-0 translate-y-0 h-8 w-8" />
@@ -133,7 +145,7 @@ const Index = () => {
             </>
           ) : (
             <>
-              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mb-8">
+              <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto mb-8">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
@@ -152,9 +164,18 @@ const Index = () => {
                     allowFullScreen
                   />
                 </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/eAnWxSJxcw8"
+                    title="YouTube Shorts - Timeless Acoustic Echoes"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
               
-              {/* New videos */}
+              {/* Additional videos */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <div className="aspect-video">
                   <iframe
