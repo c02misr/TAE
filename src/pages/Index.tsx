@@ -232,7 +232,7 @@ const Index = () => {
                             {member.linkText && (
                               <Button 
                                 variant="link" 
-                                className="px-0 py-0 h-auto text-base md:text-xl text-primary underline-offset-2 hover:underline font-medium"
+                                className="px-0 py-0 h-auto text-base md:text-xl text-primary font-medium underline decoration-2 decoration-primary hover:text-primary/80 hover:decoration-primary/80"
                                 asChild
                               >
                                 <a href={member.linkUrl} target="_blank" rel="noopener noreferrer">

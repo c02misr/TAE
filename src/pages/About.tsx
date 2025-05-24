@@ -38,7 +38,7 @@ const About = () => {
                 Check out Tim's original song on the subject of climate change 
                 <Button 
                   variant="link" 
-                  className="px-0 py-0 h-auto text-primary underline-offset-2 hover:underline font-medium"
+                  className="px-0 py-0 h-auto text-primary font-medium underline decoration-2 decoration-primary hover:text-primary/80 hover:decoration-primary/80"
                   asChild
                 >
                   <a href="https://www.youtube.com/watch?v=pAy4Jr5SDwo" target="_blank" rel="noopener noreferrer">
