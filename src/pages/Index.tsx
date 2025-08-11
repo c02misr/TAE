@@ -77,10 +77,32 @@ const Index = () => {
           {isMobile ? (
             <>
               <div className="flex items-center justify-center mb-4 text-muted-foreground">
-                <span className="text-sm animate-pulse">swipe</span>
+                <span className="text-sm animate-pulse">swipe for more videos</span>
               </div>
               <Carousel opts={{ loop: true }} className="px-4">
                 <CarouselContent>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/MkUxSXS69mc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/JWOhiIOND2A"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
                   <CarouselItem>
                     <div className="aspect-video">
                       <iframe
@@ -141,11 +163,32 @@ const Index = () => {
                   <CarouselPrevious className="relative inset-0 translate-y-0 h-8 w-8" />
                   <CarouselNext className="relative inset-0 translate-y-0 h-8 w-8" />
                 </div>
+                <div className="flex justify-center mt-2">
+                  <span className="text-xs text-muted-foreground">7 videos • swipe to see all</span>
+                </div>
               </Carousel>
             </>
           ) : (
             <>
               <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto mb-8">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/MkUxSXS69mc"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/JWOhiIOND2A"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
@@ -155,6 +198,10 @@ const Index = () => {
                     allowFullScreen
                   />
                 </div>
+              </div>
+              
+              {/* Additional videos */}
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mb-8">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
@@ -174,8 +221,8 @@ const Index = () => {
                   />
                 </div>
               </div>
-              
-              {/* Additional videos */}
+
+              {/* More videos */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <div className="aspect-video">
                   <iframe
