@@ -170,7 +170,7 @@ const Index = () => {
             </>
           ) : (
             <>
-              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mb-8">
+              <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto mb-8">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
@@ -189,11 +189,29 @@ const Index = () => {
                     allowFullScreen
                   />
                 </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/fqu52C6LvE8?start=43"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
               
-              {/* YouTube Short */}
-              <div className="flex justify-center mb-8">
-                <div className="w-full max-w-md aspect-video">
+              {/* Additional videos */}
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto mb-8">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/wpqk5LnyeUQ?start=3"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
                     src="https://www.youtube.com/embed/eAnWxSJxcw8"
@@ -204,31 +222,22 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Three smaller videos at bottom */}
-              <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full rounded-lg shadow-lg"
-                    src="https://www.youtube.com/embed/fqu52C6LvE8?start=43"
-                    title="Here Comes the Sun - Timeless Acoustic Echoes"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full rounded-lg shadow-lg"
-                    src="https://www.youtube.com/embed/wpqk5LnyeUQ?start=3"
-                    title="Country Roads - Timeless Acoustic Echoes"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+              {/* More videos */}
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
                     src="https://www.youtube.com/embed/ySOsxC-82IE?start=11"
-                    title="Something Stupid - Timeless Acoustic Echoes"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/WjWE_iquyPE?start=20"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   />
