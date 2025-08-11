@@ -79,8 +79,30 @@ const Index = () => {
               <div className="flex items-center justify-center mb-4 text-muted-foreground">
                 <span className="text-sm animate-pulse">swipe</span>
               </div>
-              <Carousel opts={{ loop: true }} className="px-4">
+               <Carousel opts={{ loop: true }} className="px-4">
                 <CarouselContent>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/MkUxSXS69mc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/JWOhiIOND2A"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
                   <CarouselItem>
                     <div className="aspect-video">
                       <iframe
@@ -145,7 +167,30 @@ const Index = () => {
             </>
           ) : (
             <>
-              <div className="grid md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto mb-8">
+              {/* Featured Videos - New additions */}
+              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto mb-8">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/MkUxSXS69mc"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/JWOhiIOND2A"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* Additional Videos */}
+              <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto mb-6">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
@@ -175,7 +220,7 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* Additional videos */}
+              {/* More Videos */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
                 <div className="aspect-video">
                   <iframe
