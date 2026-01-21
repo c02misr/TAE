@@ -85,6 +85,17 @@ const Index = () => {
                     <div className="aspect-video">
                       <iframe
                         className="w-full h-full rounded-lg shadow-lg"
+                        src="https://www.youtube.com/embed/jlL6BOt5WVo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-video">
+                      <iframe
+                        className="w-full h-full rounded-lg shadow-lg"
                         src="https://www.youtube.com/embed/MkUxSXS69mc"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -168,7 +179,16 @@ const Index = () => {
           ) : (
             <>
               {/* Featured Videos - New additions */}
-              <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto mb-8">
+              <div className="grid md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto mb-8">
+                <div className="aspect-video">
+                  <iframe
+                    className="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/jlL6BOt5WVo"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg shadow-lg"
